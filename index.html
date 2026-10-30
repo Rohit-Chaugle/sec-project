@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillBridge is an AI-based job recommendation and freelancing platform demo that matches freelancers with jobs using a simple Smart Match skill score.">
+  <meta name="theme-color" content="#0f172a">
+  <title>SkillBridge | AI-Based Job Recommendation Freelancing Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="SkillBridge home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" focusable="false">
+            <circle cx="5.5" cy="6" r="2.2" fill="currentColor"></circle>
+            <circle cx="18.5" cy="6" r="2.2" fill="currentColor"></circle>
+            <circle cx="12" cy="18" r="2.2" fill="currentColor"></circle>
+            <path d="M7.4 7.2 10.5 16M16.6 7.2 13.5 16M7.7 6h8.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>SkillBridge</strong>
+          <span>Smart freelance matching</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#profile">My Profile</a></li>
+          <li><a href="#post-job">Post a Job</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy fade-in">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> AI-based recommendations</p>
+          <h1>Find freelance work that <span class="text-accent">fits your skills.</span></h1>
+          <p class="hero-lead">
+            SkillBridge compares your skills with real freelance job requirements and shows a clear
+            <strong>Smart Match</strong> score, so you can focus on the opportunities where you already shine.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#jobs">
+              Find My Jobs
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+            <a class="btn btn-secondary" href="#profile">Build My Profile</a>
+          </div>
+          <ul class="hero-stats" aria-label="Platform highlights">
+            <li><strong>10</strong><span>curated sample jobs</span></li>
+            <li><strong>100%</strong><span>skill-based scoring</span></li>
+            <li><strong>0</strong><span>sign-ups required</span></li>
+          </ul>
+        </div>
+
+        <figure class="hero-visual fade-in">
+          <svg class="hero-art" viewBox="0 0 520 400" role="img" aria-labelledby="hero-art-title hero-art-desc">
+            <title id="hero-art-title">Freelancer profile matched with job cards</title>
+            <desc id="hero-art-desc">A freelancer profile card with skills is connected to two job cards showing Smart Match scores of 92 percent and 78 percent.</desc>
+            <rect x="16" y="16" width="488" height="368" rx="28" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"></rect>
+            <circle cx="456" cy="70" r="112" fill="#ccfbf1" opacity="0.55"></circle>
+            <circle cx="72" cy="356" r="96" fill="#e0e7ff" opacity="0.55"></circle>
+
+            <rect x="48" y="44" width="424" height="48" rx="12" fill="#0f172a"></rect>
+            <circle cx="70" cy="68" r="7" fill="#14b8a6"></circle>
+            <text x="86" y="72" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Smart Match</text>
+            <rect x="398" y="56" width="56" height="24" rx="12" fill="#1e293b"></rect>
+            <circle cx="412" cy="68" r="4" fill="#2dd4bf"></circle>
+            <text x="421" y="72" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9">Live</text>
+
+            <rect x="48" y="116" width="196" height="230" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"></rect>
+            <circle cx="86" cy="158" r="22" fill="#14b8a6"></circle>
+            <text x="86" y="163" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">RS</text>
+            <text x="120" y="152" fill="#0f172a" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Riya Sharma</text>
+            <text x="120" y="169" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Web Designer &amp; Developer</text>
+            <rect x="64" y="194" width="110" height="24" rx="12" fill="#ccfbf1"></rect>
+            <text x="119" y="210" text-anchor="middle" fill="#0f766e" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700">READY TO MATCH</text>
+            <text x="64" y="240" fill="#64748b" font-family="system-ui, sans-serif" font-size="9" font-weight="700">TOP SKILLS</text>
+            <rect x="64" y="252" width="48" height="24" rx="12" fill="#f1f5f9"></rect>
+            <text x="88" y="268" text-anchor="middle" fill="#334155" font-family="system-ui, sans-serif" font-size="8.5">HTML</text>
+            <rect x="118" y="252" width="48" height="24" rx="12" fill="#f1f5f9"></rect>
+            <text x="142" y="268" text-anchor="middle" fill="#334155" font-family="system-ui, sans-serif" font-size="8.5">CSS</text>
+            <rect x="172" y="252" width="54" height="24" rx="12" fill="#f1f5f9"></rect>
+            <text x="199" y="268" text-anchor="middle" fill="#334155" font-family="system-ui, sans-serif" font-size="8.5">Figma</text>
+            <rect x="64" y="284" width="64" height="24" rx="12" fill="#f1f5f9"></rect>
+            <text x="96" y="300" text-anchor="middle" fill="#334155" font-family="system-ui, sans-serif" font-size="8.5">JavaScript</text>
+            <rect x="134" y="284" width="76" height="24" rx="12" fill="#f1f5f9"></rect>
+            <text x="172" y="300" text-anchor="middle" fill="#334155" font-family="system-ui, sans-serif" font-size="8.5">Responsive</text>
+            <rect x="64" y="318" width="164" height="4" rx="2" fill="#e2e8f0"></rect>
+            <rect x="64" y="318" width="134" height="4" rx="2" fill="#6366f1"></rect>
+
+            <path d="M244 204c18-2 20-24 38-32M244 238c18 2 20 24 38 32" fill="none" stroke="#14b8a6" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"></path>
+            <circle cx="264" cy="218" r="16" fill="#6366f1"></circle>
+            <text x="264" y="222" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="9" font-weight="700">AI</text>
+
+            <rect x="286" y="116" width="190" height="108" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"></rect>
+            <text x="304" y="142" fill="#0f766e" font-family="system-ui, sans-serif" font-size="8" font-weight="700">WEB DESIGN</text>
+            <text x="304" y="162" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Landing Page Build</text>
+            <text x="304" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="8.5">Northstar Studio</text>
+            <text x="304" y="207" fill="#0f172a" font-family="system-ui, sans-serif" font-size="12" font-weight="700">$700</text>
+            <rect x="386" y="190" width="74" height="22" rx="11" fill="#ccfbf1"></rect>
+            <text x="423" y="205" text-anchor="middle" fill="#0f766e" font-family="system-ui, sans-serif" font-size="9" font-weight="700">92% match</text>
+
+            <rect x="286" y="240" width="190" height="106" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"></rect>
+            <text x="304" y="266" fill="#4f46e5" font-family="system-ui, sans-serif" font-size="8" font-weight="700">UI/UX DESIGN</text>
+            <text x="304" y="286" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Mobile App UX Audit</text>
+            <text x="304" y="304" fill="#64748b" font-family="system-ui, sans-serif" font-size="8.5">Bluebird Health</text>
+            <text x="304" y="330" fill="#0f172a" font-family="system-ui, sans-serif" font-size="12" font-weight="700">$520</text>
+            <rect x="386" y="312" width="74" height="22" rx="11" fill="#e0e7ff"></rect>
+            <text x="423" y="327" text-anchor="middle" fill="#4f46e5" font-family="system-ui, sans-serif" font-size="9" font-weight="700">78% match</text>
+          </svg>
+          <figcaption class="sr-only">A visual example of a freelancer profile being matched to two job opportunities.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="steps-section" id="how-it-works">
+      <div class="container">
+        <header class="section-heading">
+          <p class="eyebrow">Simple by design</p>
+          <h2>How Smart Match works</h2>
+          <p>Three easy steps take you from a skill list to a shortlist of jobs that actually fit.</p>
+        </header>
+
+        <ol class="steps-grid">
+          <li class="step-card">
+            <span class="step-number" aria-hidden="true">01</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" focusable="false">
+                <circle cx="12" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                <path d="M5.5 19c.8-3 3.2-4.6 6.5-4.6s5.7 1.6 6.5 4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+            <h3>Create your profile</h3>
+            <p>Add your skills, experience, preferred category and availability. Everything stays in your browser.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-number" aria-hidden="true">02</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" focusable="false">
+                <circle cx="10.5" cy="10.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                <path d="m15 15 4.5 4.5M8.5 10.5h4M10.5 8.5v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+            <h3>Let Smart Match score jobs</h3>
+            <p>Our simple algorithm compares your skills with each job's required skills and calculates a match percentage.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-number" aria-hidden="true">03</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" focusable="false">
+                <path d="M20 7 9.5 17.5 4 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+            <h3>Apply to your best fits</h3>
+            <p>Review your ranked recommendations, see which skills matched, and apply to the strongest opportunities.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ JOBS ============ -->
+    <section class="jobs-section" id="jobs">
+      <div class="container">
+        <header class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow">Open opportunities</p>
+            <h2>Browse freelance jobs</h2>
+            <p>Search the sample listings or filter by category. Save the ones you like for later.</p>
+          </div>
+        </header>
+
+        <div class="job-controls" role="search" aria-label="Search and filter jobs">
+          <div class="search-field">
+            <label class="control-label" for="job-search">Search jobs</label>
+            <div class="search-input-wrap">
+              <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="10.5" cy="10.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                <path d="m15 15 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+              <input
+                type="search"
+                id="job-search"
+                name="job-search"
+                placeholder="Try &quot;web design&quot; or &quot;Figma&quot;"
+                autocomplete="off"
+                aria-label="Search jobs by title, skill or company"
+                aria-controls="search-suggestions"
+                aria-expanded="false"
+              >
+              <ul class="search-suggestions" id="search-suggestions" aria-label="Search suggestions" hidden></ul>
+            </div>
+          </div>
+
+          <div class="filter-field">
+            <label class="control-label" for="category-filter">Filter by category</label>
+            <select id="category-filter" name="category-filter">
+              <option value="All">All categories</option>
+              <option value="Web Design">Web Design</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Content Writing">Content Writing</option>
+              <option value="Data Entry">Data Entry</option>
+              <option value="Graphic Design">Graphic Design</option>
+              <option value="App Development">App Development</option>
+              <option value="Video Editing">Video Editing</option>
+              <option value="Digital Marketing">Digital Marketing</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="jobs-status" id="jobs-status" role="status" aria-live="polite">
+          <span class="loading-spinner" aria-hidden="true"></span>
+          Loading sample jobs...
+        </div>
+        <p class="error-message" id="jobs-error" role="alert" hidden></p>
+        <p class="results-summary" id="job-count" aria-live="polite"></p>
+
+        <div class="jobs-grid" id="job-list"></div>
+
+        <noscript>
+          <p class="empty-state">JavaScript is needed to load and match jobs. Please enable JavaScript and reload the page.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ PROFILE ============ -->
+    <section class="profile-section" id="profile">
+      <div class="container">
+        <header class="section-heading">
+          <p class="eyebrow">Your profile</p>
+          <h2>Tell us about your skills</h2>
+          <p>We use this information only in your browser to calculate your Smart Match scores.</p>
+        </header>
+
+        <div class="profile-layout">
+          <form class="form-card" id="profile-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="profile-name">Full name <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="text" id="profile-name" name="name" placeholder="e.g. Riya Sharma" required minlength="2" maxlength="50" autocomplete="name" aria-required="true" aria-describedby="profile-name-error">
+                <span class="field-error" id="profile-name-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="profile-email">Email address <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="email" id="profile-email" name="email" placeholder="you@example.com" required autocomplete="email" aria-required="true" aria-describedby="profile-email-error">
+                <span class="field-error" id="profile-email-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="profile-phone">Phone number <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="tel" id="profile-phone" name="phone" placeholder="e.g. 98765 43210" required minlength="7" maxlength="15" pattern="[0-9 ()+-]{7,15}" autocomplete="tel" inputmode="tel" aria-required="true" aria-describedby="profile-phone-error">
+                <span class="field-error" id="profile-phone-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="profile-experience">Experience (years) <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="number" id="profile-experience" name="experience" placeholder="e.g. 2" required min="0" max="40" step="1" inputmode="numeric" aria-required="true" aria-describedby="profile-experience-error">
+                <span class="field-error" id="profile-experience-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="profile-skills">Skills <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="text" id="profile-skills" name="skills" placeholder="e.g. HTML, CSS, JavaScript, Figma" required minlength="2" autocomplete="off" aria-required="true" aria-describedby="profile-skills-help profile-skills-error">
+                <span class="help-text" id="profile-skills-help">Separate each skill with a comma. These are used by Smart Match.</span>
+                <span class="field-error" id="profile-skills-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="profile-category">Preferred category <span class="required-mark" aria-hidden="true">*</span></label>
+                <select id="profile-category" name="preferredCategory" required aria-required="true" aria-describedby="profile-category-error">
+                  <option value="">Select a category</option>
+                  <option value="Web Design">Web Design</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Content Writing">Content Writing</option>
+                  <option value="Data Entry">Data Entry</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="App Development">App Development</option>
+                  <option value="Video Editing">Video Editing</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                </select>
+                <span class="field-error" id="profile-category-error" aria-live="polite"></span>
+              </div>
+
+              <fieldset class="form-group radio-group" id="profile-availability" aria-required="true" aria-describedby="profile-availability-error">
+                <legend>Availability <span class="required-mark" aria-hidden="true">*</span></legend>
+                <div class="radio-row">
+                  <label class="radio-option">
+                    <input type="radio" name="availability" value="Full-time (30+ hrs/week)" required>
+                    <span>Full-time</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="availability" value="Part-time (10-30 hrs/week)" checked>
+                    <span>Part-time</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="availability" value="Weekends only">
+                    <span>Weekends only</span>
+                  </label>
+                </div>
+                <span class="field-error" id="profile-availability-error" aria-live="polite"></span>
+              </fieldset>
+
+              <div class="form-group full-width">
+                <label for="profile-bio">Short bio <span class="required-mark" aria-hidden="true">*</span></label>
+                <textarea id="profile-bio" name="bio" rows="4" minlength="20" maxlength="300" placeholder="What do you enjoy building or creating? Add a short introduction." required aria-required="true" aria-describedby="profile-bio-error"></textarea>
+                <span class="field-error" id="profile-bio-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-actions full-width">
+                <button class="btn btn-primary" type="submit">Save profile &amp; get matches</button>
+                <span class="form-hint">Your details are saved in this browser only.</span>
+              </div>
+            </div>
+          </form>
+
+          <aside class="info-card" aria-labelledby="profile-info-title">
+            <h3 id="profile-info-title">How your score is calculated</h3>
+            <p>Smart Match compares each job's required skills with the skills in your profile.</p>
+            <ul class="info-list">
+              <li>
+                <span class="info-check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><path d="M20 7 9.5 17.5 4 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </span>
+                Skills are compared without case sensitivity.
+              </li>
+              <li>
+                <span class="info-check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><path d="M20 7 9.5 17.5 4 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </span>
+                Score = matched skills ÷ required skills.
+              </li>
+              <li>
+                <span class="info-check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16" focusable="false"><path d="M20 7 9.5 17.5 4 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </span>
+                Recommendations are re-ranked every time you save.
+              </li>
+            </ul>
+
+            <div class="profile-summary" id="profile-summary">
+              <span class="summary-label">Profile status</span>
+              <p>No profile saved yet. Add your details to unlock your matches.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECOMMENDATIONS ============ -->
+    <section class="recommendations-section" id="recommendations">
+      <div class="container">
+        <header class="section-heading">
+          <p class="eyebrow">Smart Match results</p>
+          <h2>Your recommended jobs</h2>
+          <p id="recommendation-intro">Save your profile to see jobs ranked by your personal skill match.</p>
+          <p class="match-summary" id="match-summary" aria-live="polite"></p>
+        </header>
+
+        <div class="recommendation-grid" id="recommendation-list">
+          <div class="empty-state">
+            <h3>Your matches will appear here</h3>
+            <p>Add your skills in the profile form above and Smart Match will rank these jobs for you.</p>
+            <a class="btn btn-primary btn-small" href="#profile">Create my profile</a>
+          </div>
+        </div>
+
+        <div class="comparison-block">
+          <h3>Top 3 at a glance</h3>
+          <p class="table-note">A quick side-by-side comparison of your strongest matches.</p>
+          <div class="table-scroll">
+            <table id="comparison-table">
+              <caption class="sr-only">Comparison of the top three recommended jobs, including company, budget, match score and missing skills</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Rank</th>
+                  <th scope="col">Job</th>
+                  <th scope="col">Company</th>
+                  <th scope="col">Budget</th>
+                  <th scope="col">Smart Match</th>
+                  <th scope="col">Skills to learn</th>
+                </tr>
+              </thead>
+              <tbody id="comparison-body">
+                <tr>
+                  <td colspan="6" class="table-empty">Save your profile to compare your top three matches.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POST A JOB ============ -->
+    <section class="post-job-section" id="post-job">
+      <div class="container">
+        <header class="section-heading">
+          <p class="eyebrow">For clients</p>
+          <h2>Post a freelance job</h2>
+          <p>Add a job to the board. It is saved in your browser and included in the Smart Match results immediately.</p>
+        </header>
+
+        <form class="form-card post-job-form" id="post-job-form" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="post-title">Job title <span class="required-mark" aria-hidden="true">*</span></label>
+              <input type="text" id="post-title" name="title" placeholder="e.g. E-commerce Product Page Designer" required minlength="5" maxlength="70" aria-required="true" aria-describedby="post-title-error">
+              <span class="field-error" id="post-title-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="post-company">Company name <span class="required-mark" aria-hidden="true">*</span></label>
+              <input type="text" id="post-company" name="company" placeholder="e.g. PixelWorks" required minlength="2" maxlength="50" aria-required="true" aria-describedby="post-company-error">
+              <span class="field-error" id="post-company-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="post-category">Category <span class="required-mark" aria-hidden="true">*</span></label>
+              <select id="post-category" name="category" required aria-required="true" aria-describedby="post-category-error">
+                <option value="">Select a category</option>
+                <option value="Web Design">Web Design</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Content Writing">Content Writing</option>
+                <option value="Data Entry">Data Entry</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="App Development">App Development</option>
+                <option value="Video Editing">Video Editing</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+              </select>
+              <span class="field-error" id="post-category-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="post-budget">Budget (USD) <span class="required-mark" aria-hidden="true">*</span></label>
+              <div class="input-with-prefix">
+                <span aria-hidden="true">$</span>
+                <input type="number" id="post-budget" name="budget" placeholder="500" required min="100" max="100000" step="50" inputmode="numeric" aria-required="true" aria-describedby="post-budget-error">
+              </div>
+              <span class="field-error" id="post-budget-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="post-skills">Required skills <span class="required-mark" aria-hidden="true">*</span></label>
+              <input type="text" id="post-skills" name="requiredSkills" placeholder="e.g. HTML, CSS, Figma, Responsive Design" required minlength="2" autocomplete="off" aria-required="true" aria-describedby="post-skills-help post-skills-error">
+              <span class="help-text" id="post-skills-help">Separate each required skill with a comma.</span>
+              <span class="field-error" id="post-skills-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="post-description">Job description <span class="required-mark" aria-hidden="true">*</span></label>
+              <textarea id="post-description" name="description" rows="5" minlength="20" maxlength="500" placeholder="Describe the task, expected deliverables, timeline and anything a freelancer should know." required aria-required="true" aria-describedby="post-description-error"></textarea>
+              <span class="field-error" id="post-description-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-actions full-width">
+              <button class="btn btn-primary" type="submit">Post job</button>
+              <span class="form-hint">Posted jobs are stored in this browser only.</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <header class="section-heading">
+          <p class="eyebrow">About the project</p>
+          <h2>Built as a college demo</h2>
+          <p>SkillBridge shows how a simple recommendation idea can become a useful, interactive web experience.</p>
+        </header>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <span class="about-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
+                <path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                <circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+              </svg>
+            </span>
+            <h3>Project objective</h3>
+            <p>To help freelancers quickly find relevant work by showing a transparent skill-match score instead of an endless list of unrelated jobs.</p>
+            <p>The recommendation is a readable JavaScript algorithm, not a black box — every matched and missing skill is shown.</p>
+          </article>
+
+          <article class="about-card">
+            <span class="about-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
+                <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+            <h3>Technology used</h3>
+            <ul class="tech-list">
+              <li>HTML5 semantic structure</li>
+              <li>CSS3 Grid, Flexbox &amp; variables</li>
+              <li>Vanilla JavaScript (ES6+)</li>
+              <li>JSON parsing &amp; localStorage</li>
+              <li>No frameworks or build tools</li>
+            </ul>
+          </article>
+
+          <article class="about-card">
+            <span class="about-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
+                <circle cx="9" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                <circle cx="17" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                <path d="M3.8 19c.6-3 2.4-4.6 5.2-4.6s4.6 1.6 5.2 4.6M14.2 15.2c2.8-.7 5 .8 5.7 3.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+            <h3>Team members</h3>
+            <ul class="team-list">
+              <li><span class="member-avatar" aria-hidden="true">TM</span><span><strong>Team Member 1</strong><small>Frontend &amp; UI</small></span></li>
+              <li><span class="member-avatar" aria-hidden="true">TM</span><span><strong>Team Member 2</strong><small>JavaScript &amp; Matching</small></span></li>
+              <li><span class="member-avatar" aria-hidden="true">TM</span><span><strong>Team Member 3</strong><small>Content &amp; Testing</small></span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#home" aria-label="SkillBridge home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" focusable="false">
+              <circle cx="5.5" cy="6" r="2.2" fill="currentColor"></circle>
+              <circle cx="18.5" cy="6" r="2.2" fill="currentColor"></circle>
+              <circle cx="12" cy="18" r="2.2" fill="currentColor"></circle>
+              <path d="M7.4 7.2 10.5 16M16.6 7.2 13.5 16M7.7 6h8.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+          </span>
+          <span class="brand-text"><strong>SkillBridge</strong><span>Smart freelance matching</span></span>
+        </a>
+        <p>A student-built demo of an AI-based job recommendation and freelancing platform.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#profile">My Profile</a></li>
+          <li><a href="#post-job">Post a Job</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SkillBridge. College demo project.</p>
+      <p>Built with HTML5, CSS3 and vanilla JavaScript.</p>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
